@@ -138,6 +138,7 @@ span {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link.current {
@@ -206,6 +207,7 @@ span {
 
   color: var(--primary-text-color);
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* .contact-tel {
@@ -222,6 +224,7 @@ span {
   height: 12px;
   fill: var(--primary-text-color);
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-svg:hover,
@@ -240,6 +243,7 @@ span {
   height: 16px;
   fill: var(--primary-text-color);
   margin-right: 10px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero {
@@ -537,6 +541,8 @@ span {
   justify-content: center;
   align-items: center;
   color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-social-link {
@@ -626,6 +632,7 @@ span {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-svg {
@@ -656,12 +663,13 @@ span {
 .button-primarry:focus {
   background-color: #2196f3;
   color: #ffffff;
+  border-radius: 4px;
 }
 
 .button-secondery:hover,
 .button-secondery:focus {
-  background-color: #2196f3;
-  color: #ffffff;
+  /* background-color: #2196f3;
+  color: #ffffff; */
 
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -686,6 +694,8 @@ span {
   list-style: none;
   justify-content: center;
   padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-secondery {
@@ -700,6 +710,9 @@ span {
   padding: 6px 22px;
   cursor: pointer;
   list-style: none;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-item:not(:last-child) {
@@ -905,6 +918,8 @@ span {
   /* background-color: tomato; */
   justify-content: center;
   align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-svg {
@@ -943,7 +958,7 @@ span {
 
 /* Потрібна анімація */
 .backdrop.is-hidden .modal {
-  transform: scale(1) rotate(190deg) scale3d(0.8, 2, 0.2);
+  transform: scale(1.5) rotate(-40deg) skew(30deg, 110deg);
 }
 
 .modal {
